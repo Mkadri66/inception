@@ -7,7 +7,6 @@ run:
 
 clean:
 	docker compose -f srcs/docker-compose.yml down -v --rmi all
-	sudo rm -rf /home/mkadri/data/db /home/mkadri/data/web
 
 start:
 	@docker compose -f ./srcs/docker-compose.yml start
